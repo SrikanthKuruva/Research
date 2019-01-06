@@ -1,0 +1,13 @@
+projectPath: ./Telstra/ECO-5658
+queries:
+  - VlocityDataPackType: IntegrationProcedure
+    query: Select Id, Name, vlocity_cmt__Type__c,  vlocity_cmt__SubType__c, vlocity_cmt__Version__c from vlocity_cmt__OmniScript__c where vlocity_cmt__IsProcedure__c = true and ((vlocity_cmt__Type__c = 'Delivery' and vlocity_cmt__SubType__c = 'GetSlots' and vlocity_cmt__Version__c =31) OR (vlocity_cmt__Type__c = 'Delivery' and vlocity_cmt__SubType__c = 'AutoBook' and vlocity_cmt__Version__c =33))
+  - VlocityDataPackType: OmniScript
+    query: Select Id, vlocity_cmt__Type__c, vlocity_cmt__SubType__c, vlocity_cmt__Version__c from vlocity_cmt__OmniScript__c where vlocity_cmt__IsProcedure__c = false and ((vlocity_cmt__Type__c = 'Checkout' and vlocity_cmt__SubType__c = 'Add New Service' and vlocity_cmt__Version__c = 43))
+#  - VlocityDataPackType: VlocityUITemplate
+#    query: Select Id, Name from vlocity_cmt__VlocityUITemplate__c where vlocity_cmt__Active__c = true and Name = 'radio-input-override-Attribute'
+# Where issues on fields/ records are found, these are excluded from migration where it is also non impacting.
+
+delete: true
+#activate: true
+maxDepth: 0
