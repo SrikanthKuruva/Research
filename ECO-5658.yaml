@@ -9,5 +9,5 @@ queries:
 # Where issues on fields/ records are found, these are excluded from migration where it is also non impacting.
 
 delete: true
-#activate: true
+activate: true
 maxDepth: 0
