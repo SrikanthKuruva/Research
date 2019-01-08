@@ -1,0 +1,29 @@
+projectPath: ./WorkVBT/OptusAll
+queries:
+ 
+  - VlocityDataPackType: OmniScript
+    query: Select Id, vlocity_cmt__Type__c, vlocity_cmt__SubType__c, vlocity_cmt__Version__c from vlocity_cmt__OmniScript__c where vlocity_cmt__IsActive__c = true AND vlocity_cmt__IsProcedure__c = false and ((vlocity_cmt__Type__c = 'Generic Document' and vlocity_cmt__SubType__c = 'Generation') OR(vlocity_cmt__Type__c = 'Console' and vlocity_cmt__SubType__c = 'LaunchCPQ') OR(vlocity_cmt__Type__c = 'CPQ' and vlocity_cmt__SubType__c = 'CreateOrder') OR(vlocity_cmt__Type__c = 'Console' and vlocity_cmt__SubType__c = 'NewSQDetails') OR(vlocity_cmt__Type__c = 'CPQ' and vlocity_cmt__SubType__c = 'CreateContract')OR(vlocity_cmt__Type__c = 'Provisioning' and vlocity_cmt__SubType__c = 'Case'))
+  - VlocityDataPackType: VlocityUILayout
+    query: Select Id, Name from vlocity_cmt__VlocityUILayout__c where vlocity_cmt__Active__c = true and Name = 'cpq-header'
+
+# Where issues on fields/ records are found, these are excluded from migration where it is also non impacting.
+OverrideSettings: # These override settings are for product models
+  SObjects:
+    Product2:
+      FilterFields:
+      #- AttributeMetadata__c                 #JSON field - generated on the fly. Long text field, removed to speed up deployments
+      #- JSONAttribute__c                     #JSON field - generated on the fly. Long text field, removed to speed up deployments
+      #- ImageId__c                           
+      - Plan_Group__c                        #Lookup - not used by Vlocity. If using existing products, VBT will fail
+      - Product_Owner__c                     #Lookup - not used by Vlocity. If using existing products, VBT will fail
+      - Additional_Charge_Plan_Name__c       #Lookup - not used by Vlocity. If using existing products, VBT will fail
+    vlocity_cmt__PriceList__c:
+      FilterFields:
+      - vlocity_cmt__LoyaltyCode__c
+    vlocity_cmt__PricingElement__c:
+      FilterFields:
+      - vlocity_cmt__LoyaltyCode__c
+
+
+delete: true  # Delete the VlocityDataPack__c file on finish
+activate: true # Will Activate everything after it is imported / deployed
