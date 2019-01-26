@@ -25,5 +25,5 @@ OverrideSettings: # These override settings are for product models
       - vlocity_cmt__LoyaltyCode__c
 
 
-delete: true  # Delete the VlocityDataPack__c file on finish
+#delete: true  # Delete the VlocityDataPack__c file on finish
 activate: true # Will Activate everything after it is imported / deployed
