@@ -1,0 +1,228 @@
+{
+    "projectPath": "./vlocity",
+    "manifest": [
+        "IntegrationProcedure/sample_picklistvalues"
+    ],
+    "gitCheck": true,
+    "delete": true,
+    "maxDepth": 0,
+    "jobName": "vlocity.yaml",
+    "job": "vlocity.yaml",
+    "sfdx.username": "vhfdev",
+    "tempFolder": "./vlocity-temp/",
+    "source": "local",
+    "target": "local",
+    "sfdxUsername": "vhfdev",
+    "passedInOptionsOverride": {
+        "job": "vlocity.yaml",
+        "sfdx.username": "vhfdev"
+    },
+    "jobAction": "Export",
+    "expansionPath": ".",
+    "buildFile": "AllDataPacks.json",
+    "postStepApex": {
+        "Deploy": {
+            "Product2": {
+                "apexClass": "EPCProductJSONUpdate.cls",
+                "namespace": "vlocity_cmt"
+            }
+        }
+    },
+    "activate": true,
+    "compileOnBuild": true,
+    "defaultMaxParallel": 20,
+    "defaultMinToWaitForLWCOmniScript": 10,
+    "defaultMinToWaitForLWCClassicCards": 10,
+    "defaultMinToWaitForLWCFlexCards": 5,
+    "defaultLWCPullTimeInSeconds": 5,
+    "loginTimeoutForLoginLWC": 300000,
+    "puppeteerHeadless": true,
+    "lookForParentLayoutsForlWCCards": true,
+    "exportPacksMaxSize": 5,
+    "useAllRelationships": false,
+    "ignoreAllErrors": false,
+    "addSourceKeys": false,
+    "maximumDeployCount": 10,
+    "manifestOnly": false,
+    "autoUpdateSettings": true,
+    "supportHeadersOnly": true,
+    "allowHeadersPartial": true,
+    "supportForceDeploy": true,
+    "strict": false,
+    "cleanTestData": true,
+    "autoFixPicklists": true,
+    "reactivateOmniScriptsWhenEmbeddedTemplateFound": false,
+    "autoFixDeployErrors": {
+        "AttributeCategoryDisplaySequence": true
+    },
+    "tests": [
+        "Local",
+        "Org"
+    ],
+    "npmRepository": "https://repo.vlocity.com/repository/vlocity-public/",
+    "startTime": 1666081141000,
+    "originalAction": "Export",
+    "logName": "vlocity-yaml-2022-10-18T08-19-08-119Z-Export.yaml",
+    "alreadyExportedKeys": [
+        "828062523a1c294c686007e3ddbaee7d"
+    ],
+    "allParents": [
+        "IntegrationProcedure/sample_picklistvalues"
+    ],
+    "errors": [],
+    "report": [],
+    "postDeployResults": [],
+    "preDeployDataSummary": [],
+    "refreshVlocityBase": [],
+    "expandedDataPacks": [
+        "828062523a1c294c686007e3ddbaee7d",
+        "828062523a1c294c686007e3ddbaee7d"
+    ],
+    "currentStatus": {
+        "828062523a1c294c686007e3ddbaee7d": "Success"
+    },
+    "currentErrors": {},
+    "parallelStatus": {},
+    "sourceKeysByParent": {
+        "%vlocity_namespace%__OmniScript__c/sample/picklistvalues/Procedure": [
+            "828062523a1c294c686007e3ddbaee7d"
+        ],
+        "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/sample/picklistvalues/Procedure/ResponseAction1": [
+            "828062523a1c294c686007e3ddbaee7d"
+        ],
+        "VlocityRecordSourceKey:a4B5P000000BkR0UAK": []
+    },
+    "alreadyExportedIdsByType": {
+        "IntegrationProcedure": [
+            "a4B5P000000BkR0UAK",
+            "a4B5P000000BkR0"
+        ]
+    },
+    "alreadyErroredIdsByType": {
+        "IntegrationProcedure": []
+    },
+    "alreadyRetriedIdsByType": {},
+    "keyToType": {},
+    "vlocityKeysToNewNamesMap": {
+        "VlocityRecordSourceKey:a4B5P000000BkR0UAK": "%vlocity_namespace%__OmniScript__c/sample/picklistvalues/Procedure",
+        "VlocityRecordSourceKey:a2Y5P000000KDlqUAG": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/sample/picklistvalues/Procedure/ResponseAction1",
+        "828062523a1c294c686007e3ddbaee7d": "IntegrationProcedure/sample_picklistvalues",
+        "IntegrationProcedure/sample_picklistvalues": "IntegrationProcedure/sample_picklistvalues"
+    },
+    "vlocityRecordSourceKeyMap": {
+        "VlocityRecordSourceKey:a4B5P000000BkR0UAK": {
+            "VlocityRecordSourceKeyOriginal": "VlocityRecordSourceKey:a4B5P000000BkR0UAK",
+            "VlocityRecordSourceKeyNew": "%vlocity_namespace%__OmniScript__c/sample/picklistvalues/Procedure",
+            "%vlocity_namespace%__Type__c": "sample",
+            "%vlocity_namespace%__SubType__c": "picklistvalues",
+            "%vlocity_namespace%__Language__c": "Procedure"
+        },
+        "a4B5P000000BkR0UAK": {
+            "VlocityRecordSourceKeyOriginal": "VlocityRecordSourceKey:a4B5P000000BkR0UAK",
+            "VlocityRecordSourceKeyNew": "%vlocity_namespace%__OmniScript__c/sample/picklistvalues/Procedure",
+            "%vlocity_namespace%__Type__c": "sample",
+            "%vlocity_namespace%__SubType__c": "picklistvalues",
+            "%vlocity_namespace%__Language__c": "Procedure"
+        },
+        "VlocityRecordSourceKey:a2Y5P000000KDlqUAG": {
+            "VlocityRecordSourceKeyOriginal": "VlocityRecordSourceKey:a2Y5P000000KDlqUAG",
+            "VlocityRecordSourceKeyNew": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/sample/picklistvalues/Procedure/ResponseAction1",
+            "%vlocity_namespace%__OmniScriptId__c": {
+                "Name": "sample_picklistvalues",
+                "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "VlocityRecordSourceKey:a4B5P000000BkR0UAK"
+            },
+            "Name": "ResponseAction1"
+        },
+        "a2Y5P000000KDlqUAG": {
+            "VlocityRecordSourceKeyOriginal": "VlocityRecordSourceKey:a2Y5P000000KDlqUAG",
+            "VlocityRecordSourceKeyNew": "%vlocity_namespace%__Element__c/%vlocity_namespace%__OmniScript__c/sample/picklistvalues/Procedure/ResponseAction1",
+            "%vlocity_namespace%__OmniScriptId__c": {
+                "Name": "sample_picklistvalues",
+                "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+                "VlocityDataPackType": "VlocityMatchingKeyObject",
+                "VlocityMatchingRecordSourceKey": "VlocityRecordSourceKey:a4B5P000000BkR0UAK"
+            },
+            "Name": "ResponseAction1"
+        }
+    },
+    "VlocityDataPackIds": {
+        "a6r5P0000002NZ6QAM": "Complete"
+    },
+    "generatedKeysToNames": {},
+    "sourceKeyToRecordId": {},
+    "sourceKeyToMatchingKeysData": {},
+    "dataPackKeyToPrimarySourceKey": {},
+    "diffType": {},
+    "sourceHashCodes": {},
+    "targetHashCodes": {},
+    "fullManifest": {
+        "IntegrationProcedure": {
+            "a4B5P000000BkR0UAK": {
+                "Id": "a4B5P000000BkR0UAK",
+                "%vlocity_namespace%__Type__c": "sample",
+                "%vlocity_namespace%__SubType__c": "picklistvalues",
+                "VlocityDataPackType": "IntegrationProcedure",
+                "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+                "VlocityDataPackDisplayLabel": "sample_picklistvalues",
+                "orgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_ins__integrationproceduredesigner?id=a4B5P000000BkR0UAK"
+            }
+        }
+    },
+    "manifestFound": {},
+    "dataPackDisplayLabels": {},
+    "allDataSummary": {
+        "828062523a1c294c686007e3ddbaee7d": {
+            "VlocityDataPackDisplayLabel": "sample_picklistvalues (sample/picklistvalues/Procedure)",
+            "VlocityDataPackType": "IntegrationProcedure"
+        }
+    },
+    "pendingFromManifest": {},
+    "keysToDirectories": {},
+    "VlocityDataPackKeyToUrlMapping": {},
+    "relationshipKeyToChildKeys": {},
+    "dataPackLabelsByDir": {},
+    "upgradeDataPackFields": false,
+    "specificManifestKeys": [
+        "IntegrationProcedure/sample_picklistvalues"
+    ],
+    "queries": [
+        {
+            "VlocityDataPackType": "IntegrationProcedure",
+            "query": "Select Id, %vlocity_namespace%__Type__c, %vlocity_namespace%__SubType__c from %vlocity_namespace%__OmniScript__c WHERE %vlocity_namespace%__IsActive__c = true AND %vlocity_namespace%__IsProcedure__c = true"
+        },
+        {
+            "VlocityDataPackType": "IntegrationProcedure",
+            "query": "Select Id, %vlocity_namespace%__Type__c, %vlocity_namespace%__SubType__c, %vlocity_namespace%__Version__c from %vlocity_namespace%__OmniScript__c WHERE %vlocity_namespace%__IsProcedure__c = true",
+            "versionCompare": true
+        }
+    ],
+    "supportParallel": true,
+    "specificManifestObjects": null,
+    "shouldSendUpdates": true,
+    "initialized": true,
+    "toExportGroups": [
+        [
+            {
+                "Id": "a4B5P000000BkR0UAK",
+                "%vlocity_namespace%__Type__c": "sample",
+                "%vlocity_namespace%__SubType__c": "picklistvalues",
+                "VlocityDataPackType": "IntegrationProcedure",
+                "VlocityRecordSObjectType": "%vlocity_namespace%__OmniScript__c",
+                "VlocityDataPackDisplayLabel": "sample_picklistvalues",
+                "orgUrl": "/one/one.app#/alohaRedirect/apex/vlocity_ins__integrationproceduredesigner?id=a4B5P000000BkR0UAK"
+            }
+        ]
+    ],
+    "exportRemaining": 0,
+    "elapsedTime": "0m 11s",
+    "records": [
+        {
+            "VlocityDataPackKey": "IntegrationProcedure/sample_picklistvalues",
+            "VlocityDataPackDisplayLabel": "sample_picklistvalues (sample/picklistvalues/Procedure)",
+            "VlocityDataPackType": "IntegrationProcedure",
+            "VlocityDataPackStatus": "Success"
+        }
+    ]
+}

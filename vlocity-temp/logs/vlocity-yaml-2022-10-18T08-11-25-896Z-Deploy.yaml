@@ -1,0 +1,19 @@
+Org: vhfdev
+Version: 1.15.8
+Node: v16.13.0
+PackageVersion: '890.336'
+Namespace: vlocity_ins
+Job: VDX
+Action: Deploy
+ProjectPath: ./vlocity
+TotalTime: 1m 25s
+Count:
+  Success: {}
+Errors: []
+Status:
+  Success: {}
+StatusCount:
+  Remaining: 0
+  Success: 1
+  Error: 0
+id: !<tag:yaml.org,2002:js/undefined> ''

@@ -1,0 +1,22 @@
+Org: vhfdev
+Version: 1.15.8
+Node: v16.13.0
+PackageVersion: '890.336'
+Namespace: vlocity_ins
+Job: VDX
+Action: Export
+ProjectPath: ./vlocity
+TotalTime: 0m 11s
+Count:
+  Success:
+    IntegrationProcedure: 1
+Errors: []
+Status:
+  Success:
+    IntegrationProcedure:
+      - sample_picklistvalues
+StatusCount:
+  Remaining: 0
+  Success: 1
+  Error: 0
+id: !<tag:yaml.org,2002:js/undefined> ''
