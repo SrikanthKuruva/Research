@@ -1,0 +1,8 @@
+Org: vhfdev
+Version: 1.15.8
+PackageVersion: 890.336
+Namespace: vlocity_ins
+Job: vlocity.yaml
+Action: Export
+ProjectPath: ./vlocity
+Errors: None

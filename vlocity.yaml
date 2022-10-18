@@ -1,6 +1,6 @@
 projectPath: ./vlocity
 manifest:
-  - OmniScript/SRO_VHFFinalApproval_English
+  - IntegrationProcedure/sample_picklistvalues
   
 
 gitCheck: true
