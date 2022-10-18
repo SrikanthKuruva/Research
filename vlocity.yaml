@@ -1,0 +1,8 @@
+projectPath: ./vlocity
+manifest:
+  - OmniScript/SRO_VHFFinalApproval_English
+  
+
+gitCheck: true
+delete: true # Delete the VlocityDataPack__c file on finish
+maxDepth: 0
