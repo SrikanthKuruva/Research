@@ -8,6 +8,8 @@
     },
     "%vlocity_namespace%__PropertySet__c": {
         "additionalOutput": {
+            "anotherSample": "%SetValues1:anotherSample%",
+            "sample": "%SetValues1:sample%",
             "success": true
         },
         "disOnTplt": false,

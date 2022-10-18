@@ -11,6 +11,7 @@
         "chainOnStep": false,
         "disOnTplt": false,
         "elementValueMap": {
+            "anotherSample": "anotherSample",
             "sample": "sample"
         },
         "executionConditionalFormula": "",
