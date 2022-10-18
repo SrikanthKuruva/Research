@@ -6,7 +6,7 @@ Namespace: vlocity_ins
 Job: VDX
 Action: Export
 ProjectPath: ./vlocity
-TotalTime: 0m 11s
+TotalTime: 0m 12s
 Count:
   Success:
     IntegrationProcedure: 1
